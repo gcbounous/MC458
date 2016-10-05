@@ -8,6 +8,8 @@ void execute_test(const std::vector<Pint>&input, int max_num_comparisons) {
   std::cout << output << std::endl;
 
   int num_comparisons = Pint::getNumComparisons();
+  std::cout << "comp: "<< num_comparisons << endl;
+
   if(num_comparisons < max_num_comparisons)
     std::cout << "OK" << std::endl;
   else
